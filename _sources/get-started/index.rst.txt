@@ -1,23 +1,23 @@
-Get Started
+快速入门
 ===========
 
-This section will guide you through getting started with the F103_2025E_Gimbal project.
+本章节将指导您如何快速开始 F103_2025E_Gimbal 项目的开发和测试。
 
-Hardware Setup
+硬件准备
 --------------
 
-* Connect the STM32F103 board to your PC via USB.
-* Connect the Gimbal motors to the appropriate PWM output pins.
-* Ensure the BMI088 IMU is connected to the I2C/SPI bus.
+* 使用 USB 线将 STM32F103 开发板连接到电脑。
+* 将云台电机连接到对应的 PWM 输出引脚。
+* 确保 BMI088 IMU 传感器已正确连接到 I2C/SPI 总线。
 
-Software Setup
+软件环境
 --------------
 
-1. Clone the repository.
-2. Open the project in Keil MDK or your preferred IDE.
-3. Build the project and flash it to the board.
+1. 克隆本项目的代码仓库。
+2. 在 Keil MDK 或您偏好的 IDE 中打开项目工程。
+3. 编译项目并将固件烧录到开发板中。
 
-Running the Project
+运行项目
 -------------------
 
-Once flashed, the Gimbal should start initializing and stabilizing automatically.
+固件烧录完成后，复位开发板，云台将自动开始初始化并进入增稳模式。

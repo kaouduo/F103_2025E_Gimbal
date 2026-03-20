@@ -1,25 +1,26 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" data-content_root="./">
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>F103_2025E_Gimbal Programming Guide &mdash; MyProject  documentation</title>
+  <title>F103_2025E_Gimbal 编程指南 &mdash; F103_2025E_Gimbal  文档</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
 
   
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/documentation_options.js?v=7d86a446"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=beaddf03"></script>
     <script src="_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Get Started" href="get-started/index.html" /> 
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="快速入门" href="get-started/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -31,40 +32,40 @@
           
           
           <a href="#" class="icon icon-home">
-            MyProject
+            F103_2025E_Gimbal
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">目录:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="get-started/index.html">Get Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api-reference/index.html">API Reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hw-reference/index.html">Hardware Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="get-started/index.html">快速入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-reference/index.html">API 参考</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hw-reference/index.html">硬件参考</a></li>
 </ul>
 
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单"  style="background: #2980B9" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">MyProject</a>
+          <a href="#">F103_2025E_Gimbal</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="Page navigation">
+          <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">F103_2025E_Gimbal Programming Guide</li>
+      <li class="breadcrumb-item active">F103_2025E_Gimbal 编程指南</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/index.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -72,26 +73,26 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="f103-2025e-gimbal-programming-guide">
-<h1>F103_2025E_Gimbal Programming Guide<a class="headerlink" href="#f103-2025e-gimbal-programming-guide" title="Link to this heading"></a></h1>
-<p>This is the documentation for the F103_2025E_Gimbal project. This document describes using the STM32F103 SoC for gimbal control.</p>
+  <section id="f103-2025e-gimbal">
+<h1>F103_2025E_Gimbal 编程指南<a class="headerlink" href="#f103-2025e-gimbal" title="Link to this heading"></a></h1>
+<p>这里是 F103_2025E_Gimbal 项目的官方文档。本文档介绍了如何基于 STM32F103 SoC 进行云台控制开发。</p>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<p class="caption" role="heading"><span class="caption-text">目录:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="get-started/index.html">Get Started</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="get-started/index.html#hardware-setup">Hardware Setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get-started/index.html#software-setup">Software Setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get-started/index.html#running-the-project">Running the Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="get-started/index.html">快速入门</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get-started/index.html#id2">硬件准备</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get-started/index.html#id3">软件环境</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get-started/index.html#id4">运行项目</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="api-reference/index.html">API Reference</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="api-reference/gimbal_api.html">Gimbal API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api-reference/pid_api.html">PID Control API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-reference/index.html">API 参考</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api-reference/gimbal_api.html">云台控制 API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api-reference/pid_api.html">PID 控制 API</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="hw-reference/index.html">Hardware Reference</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="hw-reference/index.html#microcontroller">Microcontroller</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hw-reference/index.html#sensors">Sensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hw-reference/index.html">硬件参考</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hw-reference/index.html#mcu">微控制器 (MCU)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hw-reference/index.html#id2">传感器</a></li>
 </ul>
 </li>
 </ul>
@@ -101,19 +102,19 @@
 
            </div>
           </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="get-started/index.html" class="btn btn-neutral float-right" title="Get Started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="get-started/index.html" class="btn btn-neutral float-right" title="快速入门" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2026, AutoGenerated.</p>
+    <p>&#169; 版权所有 2026, kaouduo。</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
    
 
 </footer>
