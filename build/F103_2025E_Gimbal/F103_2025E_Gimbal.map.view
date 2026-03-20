@@ -1,0 +1,6 @@
+tool: AC6
+fileName: 'F103_2025E_Gimbal.map'
+elfName: 'F103_2025E_Gimbal.axf'
+compilerName: 'ARMCLANG 6'
+compilerFullName: 'ARMCLANG 6'
+compilerPath: 'C:\Keil_v5\ARM\ARMCLANG\bin\armclang.exe'

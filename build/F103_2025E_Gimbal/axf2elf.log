@@ -1,0 +1,4 @@
+arm-none-eabi-objcopy --update-section ER_IROM1="C:\Users\kaouduo\AppData\Local\Temp\F103_2025E_Gimbal_RHhqOKcD.bin"  "d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\build\F103_2025E_Gimbal/F103_2025E_Gimbal.axf" "d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\build\F103_2025E_Gimbal/F103_2025E_Gimbal.elf"
+
+arm-none-eabi-objcopy: d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\build\F103_2025E_Gimbal/F103_2025E_Gimbal.elf: warning: allocated section `RW_IRAM1' not in segment
+

@@ -1,0 +1,426 @@
+[2026-03-20 09:45:46]	[info] incremental build: 42 source files changed
+These source files will be recompiled
+---
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\adc.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\can.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\dma.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\freertos.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\gpio.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\main.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\spi.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\stm32f1xx_hal_msp.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\stm32f1xx_hal_timebase_tim.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\stm32f1xx_it.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\system_stm32f1xx.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\tim.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\usart.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_can.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\MDK-ARM\startup_stm32f103xb.s': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Middlewares\Third_Party\FreeRTOS\Source\croutine.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Middlewares\Third_Party\FreeRTOS\Source\list.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM3\port.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Middlewares\Third_Party\FreeRTOS\Source\queue.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Middlewares\Third_Party\FreeRTOS\Source\tasks.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Middlewares\Third_Party\FreeRTOS\Source\timers.c': object (.o) file not exist
+
+[2026-03-20 09:45:47]	compilation failed at : "d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\freertos.c", exit code: 1
+command: 
+  "C:\Keil_v5\ARM\ARMCLANG\bin\armclang.exe" --target=arm-arm-none-eabi -c -xc -std=c99 -ICore/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc/Legacy -IMiddlewares/Third_Party/FreeRTOS/Source/include -IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -IMiddlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -IDrivers/CMSIS/Device/ST/STM32F1xx/Include -IDrivers/CMSIS/Include -I.cmsis/include -IMDK-ARM/RTE/_F103_2025E_Gimbal -D"USE_HAL_DRIVER" -D"STM32F103xB" -mcpu=cortex-m3 -mlittle-endian -O3 -ffunction-sections -funsigned-char -fshort-enums -fshort-wchar -fno-rtti -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -g -o ./build/F103_2025E_Gimbal/.obj/Core/Src/freertos.o -MMD ./Core/Src/freertos.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+./Core/Src/freertos.c:28:10: fatal error: 'algorithm.h' file not found
+   28 | #include "algorithm.h"
+      |          ^~~~~~~~~~~~~
+1 error generated.
+
+[2026-03-20 09:47:25]	[info] incremental build: 53 source files changed
+These source files will be recompiled
+---
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\adc.c': compiler options has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\can.c': compiler options has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\dma.c': compiler options has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\freertos.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\gpio.c': compiler options has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\main.c': compiler options has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\spi.c': compiler options has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\stm32f1xx_hal_msp.c': compiler options has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\stm32f1xx_hal_timebase_tim.c': compiler options has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\stm32f1xx_it.c': compiler options has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\system_stm32f1xx.c': compiler options has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\tim.c': compiler options has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\usart.c': compiler options has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c': compiler options has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c': compiler options has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c': compiler options has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_can.c': compiler options has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\MDK-ARM\startup_stm32f103xb.s': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Middlewares\Third_Party\FreeRTOS\Source\croutine.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Middlewares\Third_Party\FreeRTOS\Source\list.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM3\port.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Middlewares\Third_Party\FreeRTOS\Source\queue.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Middlewares\Third_Party\FreeRTOS\Source\tasks.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Middlewares\Third_Party\FreeRTOS\Source\timers.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserApp\gimbal.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserApp\irq_handlers.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserBsp\bsp_dwt.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserBsp\bsp_fdcan.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserBsp\bsp_usart.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\BMI088\BMI088Middleware.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\BMI088\BMI088driver.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\Mahony\MahonyAHRS.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\ebtn\ebtn.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\pid\pid.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\vofa\algorithm.c': object (.o) file not exist
+
+[2026-03-20 09:47:26]	compilation failed at : "d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserBsp\bsp_fdcan.c", exit code: 1
+command: 
+  "C:\Keil_v5\ARM\ARMCLANG\bin\armclang.exe" --target=arm-arm-none-eabi -c -xc -std=c99 -ICore/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc/Legacy -IMiddlewares/Third_Party/FreeRTOS/Source/include -IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -IMiddlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -IDrivers/CMSIS/Device/ST/STM32F1xx/Include -IDrivers/CMSIS/Include -IUserCode/UserApp -IUserCode/UserBsp -IUserCode/UserDrivers -IUserCode/UserDrivers/BMI088 -IUserCode/UserDrivers/ebtn -IUserCode/UserDrivers/Mahony -IUserCode/UserDrivers/pid -IUserCode/UserDrivers/vofa -I.cmsis/include -IMDK-ARM/RTE/_F103_2025E_Gimbal -D"USE_HAL_DRIVER" -D"STM32F103xB" -mcpu=cortex-m3 -mlittle-endian -O3 -ffunction-sections -funsigned-char -fshort-enums -fshort-wchar -fno-rtti -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -g -o ./build/F103_2025E_Gimbal/.obj/UserCode/UserBsp/bsp_fdcan.o -MMD ./UserCode/UserBsp/bsp_fdcan.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+./UserCode/UserApp/gimbal.c:12:10: fatal error: 'my_main.h' file not found
+   12 | #include "my_main.h"
+      |          ^~~~~~~~~~~
+1 error generated.
+In file included from ./UserCode/UserBsp/bsp_fdcan.c:1:
+./UserCode/UserBsp\bsp_fdcan.h:10:26: error: unknown type name 'FDCAN_HandleTypeDef'; did you mean 'CAN_HandleTypeDef'?
+   10 | uint8_t fdcanx_send_data(hcan_t *hfdcan, uint16_t id, uint8_t *data, uint32_t len);
+      |                          ^~~~~~
+      |                          CAN_HandleTypeDef
+./UserCode/UserBsp\bsp_fdcan.h:6:16: note: expanded from macro 'hcan_t'
+    6 | #define hcan_t FDCAN_HandleTypeDef
+      |                ^
+Drivers/STM32F1xx_HAL_Driver/Inc\stm32f1xx_hal_can.h:246:3: note: 'CAN_HandleTypeDef' declared here
+  246 | } CAN_HandleTypeDef;
+      |   ^
+In file included from ./UserCode/UserBsp/bsp_fdcan.c:1:
+./UserCode/UserBsp\bsp_fdcan.h:11:24: error: unknown type name 'FDCAN_HandleTypeDef'; did you mean 'CAN_HandleTypeDef'?
+   11 | uint8_t fdcanx_receive(hcan_t *hfdcan, uint16_t *rec_id, uint8_t *buf);
+      |                        ^~~~~~
+      |                        CAN_HandleTypeDef
+./UserCode/UserBsp\bsp_fdcan.h:6:16: note: expanded from macro 'hcan_t'
+    6 | #define hcan_t FDCAN_HandleTypeDef
+      |                ^
+Drivers/STM32F1xx_HAL_Driver/Inc\stm32f1xx_hal_can.h:246:3: note: 'CAN_HandleTypeDef' declared here
+  246 | } CAN_HandleTypeDef;
+      |   ^
+In file included from ./UserCode/UserBsp/bsp_fdcan.c:1:
+./UserCode/UserBsp\bsp_fdcan.h:17:30: error: unknown type name 'FDCAN_HandleTypeDef'; did you mean 'CAN_HandleTypeDef'?
+   17 | uint8_t fdcan_send_motor_cmd(hcan_t *hfdcan, uint16_t can_id, int16_t motor1_voltage, int16_t motor2_voltage);
+      |                              ^~~~~~
+      |                              CAN_HandleTypeDef
+./UserCode/UserBsp\bsp_fdcan.h:6:16: note: expanded from macro 'hcan_t'
+    6 | #define hcan_t FDCAN_HandleTypeDef
+      |                ^
+Drivers/STM32F1xx_HAL_Driver/Inc\stm32f1xx_hal_can.h:246:3: note: 'CAN_HandleTypeDef' declared here
+  246 | } CAN_HandleTypeDef;
+      |   ^
+In file included from ./UserCode/UserBsp/bsp_fdcan.c:1:
+./UserCode/UserBsp\bsp_fdcan.h:19:32: error: unknown type name 'FDCAN_HandleTypeDef'; did you mean 'CAN_HandleTypeDef'?
+   19 | uint8_t fdcan_send_motor_cmd_4(hcan_t *hfdcan, uint16_t can_id, int16_t voltages[4]);
+      |                                ^~~~~~
+      |                                CAN_HandleTypeDef
+./UserCode/UserBsp\bsp_fdcan.h:6:16: note: expanded from macro 'hcan_t'
+    6 | #define hcan_t FDCAN_HandleTypeDef
+      |                ^
+Drivers/STM32F1xx_HAL_Driver/Inc\stm32f1xx_hal_can.h:246:3: note: 'CAN_HandleTypeDef' declared here
+  246 | } CAN_HandleTypeDef;
+      |   ^
+./UserCode/UserBsp/bsp_fdcan.c:4:10: fatal error: 'my_main.h' file not found
+    4 | #include "my_main.h"
+      |          ^~~~~~~~~~~
+5 errors generated.
+
+[2026-03-20 09:51:22]	[info] incremental build: 6 source files changed
+These source files will be recompiled
+---
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserApp\gimbal.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserBsp\bsp_fdcan.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\Mahony\MahonyAHRS.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\ebtn\ebtn.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\pid\pid.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\vofa\algorithm.c': object (.o) file not exist
+
+[2026-03-20 09:51:23]	compilation failed at : "d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserBsp\bsp_fdcan.c", exit code: 1
+command: 
+  "C:\Keil_v5\ARM\ARMCLANG\bin\armclang.exe" --target=arm-arm-none-eabi -c -xc -std=c99 -ICore/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc/Legacy -IMiddlewares/Third_Party/FreeRTOS/Source/include -IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -IMiddlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -IDrivers/CMSIS/Device/ST/STM32F1xx/Include -IDrivers/CMSIS/Include -IUserCode/UserApp -IUserCode/UserBsp -IUserCode/UserDrivers -IUserCode/UserDrivers/BMI088 -IUserCode/UserDrivers/ebtn -IUserCode/UserDrivers/Mahony -IUserCode/UserDrivers/pid -IUserCode/UserDrivers/vofa -I.cmsis/include -IMDK-ARM/RTE/_F103_2025E_Gimbal -D"USE_HAL_DRIVER" -D"STM32F103xB" -mcpu=cortex-m3 -mlittle-endian -O3 -ffunction-sections -funsigned-char -fshort-enums -fshort-wchar -fno-rtti -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -g -o ./build/F103_2025E_Gimbal/.obj/UserCode/UserBsp/bsp_fdcan.o -MMD ./UserCode/UserBsp/bsp_fdcan.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./UserCode/UserBsp/bsp_fdcan.c:23:2: error: call to undeclared function 'HAL_FDCAN_Start'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   23 |         HAL_FDCAN_Start(&hfdcan1);                               // Start FDCAN
+      |         ^
+./UserCode/UserBsp/bsp_fdcan.c:23:2: note: did you mean 'HAL_CAN_Start'?
+Drivers/STM32F1xx_HAL_Driver/Inc\stm32f1xx_hal_can.h:683:19: note: 'HAL_CAN_Start' declared here
+  683 | HAL_StatusTypeDef HAL_CAN_Start(CAN_HandleTypeDef *hcan);
+      |                   ^
+./UserCode/UserBsp/bsp_fdcan.c:23:19: error: use of undeclared identifier 'hfdcan1'
+   23 |         HAL_FDCAN_Start(&hfdcan1);                               // Start FDCAN
+      |                          ^
+./UserCode/UserBsp/bsp_fdcan.c:26:2: error: call to undeclared function 'HAL_FDCAN_ActivateNotification'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   26 |         HAL_FDCAN_ActivateNotification(&hfdcan1, FDCAN_IT_RX_FIFO0_NEW_MESSAGE, 0);
+      |         ^
+./UserCode/UserBsp/bsp_fdcan.c:26:2: note: did you mean 'HAL_CAN_ActivateNotification'?
+Drivers/STM32F1xx_HAL_Driver/Inc\stm32f1xx_hal_can.h:707:19: note: 'HAL_CAN_ActivateNotification' declared here
+  707 | HAL_StatusTypeDef HAL_CAN_ActivateNotification(CAN_HandleTypeDef *hcan, uint32_t ActiveITs);
+      |                   ^
+./UserCode/UserBsp/bsp_fdcan.c:26:34: error: use of undeclared identifier 'hfdcan1'
+   26 |         HAL_FDCAN_ActivateNotification(&hfdcan1, FDCAN_IT_RX_FIFO0_NEW_MESSAGE, 0);
+      |                                         ^
+./UserCode/UserBsp/bsp_fdcan.c:26:43: error: use of undeclared identifier 'FDCAN_IT_RX_FIFO0_NEW_MESSAGE'
+   26 |         HAL_FDCAN_ActivateNotification(&hfdcan1, FDCAN_IT_RX_FIFO0_NEW_MESSAGE, 0);
+      |                                                  ^
+./UserCode/UserBsp/bsp_fdcan.c:41:2: error: unknown type name 'FDCAN_FilterTypeDef'; did you mean 'CAN_FilterTypeDef'?
+   41 |         FDCAN_FilterTypeDef fdcan_filter;
+      |         ^~~~~~~~~~~~~~~~~~~
+      |         CAN_FilterTypeDef
+Drivers/STM32F1xx_HAL_Driver/Inc\stm32f1xx_hal_can.h:150:3: note: 'CAN_FilterTypeDef' declared here
+  150 | } CAN_FilterTypeDef;
+      |   ^
+./UserCode/UserBsp/bsp_fdcan.c:43:15: error: no member named 'IdType' in 'CAN_FilterTypeDef'
+   43 |         fdcan_filter.IdType = FDCAN_STANDARD_ID;                       // Standard ID
+      |         ~~~~~~~~~~~~ ^
+./UserCode/UserBsp/bsp_fdcan.c:43:24: error: use of undeclared identifier 'FDCAN_STANDARD_ID'
+   43 |         fdcan_filter.IdType = FDCAN_STANDARD_ID;                       // Standard ID
+      |                               ^
+./UserCode/UserBsp/bsp_fdcan.c:44:15: error: no member named 'FilterIndex' in 'CAN_FilterTypeDef'; did you mean 'FilterMode'?
+   44 |         fdcan_filter.FilterIndex = 0;                                  // Filter index
+      |                      ^~~~~~~~~~~
+      |                      FilterMode
+Drivers/STM32F1xx_HAL_Driver/Inc\stm32f1xx_hal_can.h:134:12: note: 'FilterMode' declared here
+  134 |   uint32_t FilterMode;            /*!< Specifies the filter mode to be initialized.
+      |            ^
+./UserCode/UserBsp/bsp_fdcan.c:45:15: error: no member named 'FilterType' in 'CAN_FilterTypeDef'
+   45 |         fdcan_filter.FilterType = FDCAN_FILTER_MASK;
+      |         ~~~~~~~~~~~~ ^
+./UserCode/UserBsp/bsp_fdcan.c:45:28: error: use of undeclared identifier 'FDCAN_FILTER_MASK'
+   45 |         fdcan_filter.FilterType = FDCAN_FILTER_MASK;
+      |                                   ^
+./UserCode/UserBsp/bsp_fdcan.c:46:15: error: no member named 'FilterConfig' in 'CAN_FilterTypeDef'
+   46 |         fdcan_filter.FilterConfig = FDCAN_FILTER_TO_RXFIFO0;           // Filter 0 to FIFO0
+      |         ~~~~~~~~~~~~ ^
+./UserCode/UserBsp/bsp_fdcan.c:46:30: error: use of undeclared identifier 'FDCAN_FILTER_TO_RXFIFO0'
+   46 |         fdcan_filter.FilterConfig = FDCAN_FILTER_TO_RXFIFO0;           // Filter 0 to FIFO0
+      |                                     ^
+./UserCode/UserBsp/bsp_fdcan.c:47:15: error: no member named 'FilterID1' in 'CAN_FilterTypeDef'
+   47 |         fdcan_filter.FilterID1 = 0x00;
+      |         ~~~~~~~~~~~~ ^
+./UserCode/UserBsp/bsp_fdcan.c:48:15: error: no member named 'FilterID2' in 'CAN_FilterTypeDef'
+   48 |         fdcan_filter.FilterID2 = 0x00;
+      |         ~~~~~~~~~~~~ ^
+./UserCode/UserBsp/bsp_fdcan.c:50:2: error: call to undeclared function 'HAL_FDCAN_ConfigFilter'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   50 |         HAL_FDCAN_ConfigFilter(&hfdcan1, &fdcan_filter);
+      |         ^
+./UserCode/UserBsp/bsp_fdcan.c:50:2: note: did you mean 'HAL_CAN_ConfigFilter'?
+Drivers/STM32F1xx_HAL_Driver/Inc\stm32f1xx_hal_can.h:671:19: note: 'HAL_CAN_ConfigFilter' declared here
+  671 | HAL_StatusTypeDef HAL_CAN_ConfigFilter(CAN_HandleTypeDef *hcan, const CAN_FilterTypeDef *sFilterConfig);
+      |                   ^
+./UserCode/UserBsp/bsp_fdcan.c:50:26: error: use of undeclared identifier 'hfdcan1'
+   50 |         HAL_FDCAN_ConfigFilter(&hfdcan1, &fdcan_filter);
+      |                                 ^
+./UserCode/UserBsp/bsp_fdcan.c:52:2: error: call to undeclared function 'HAL_FDCAN_ConfigGlobalFilter'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   52 |         HAL_FDCAN_ConfigGlobalFilter(&hfdcan1, FDCAN_REJECT, FDCAN_REJECT, FDCAN_REJECT_REMOTE, FDCAN_REJECT_REMOTE);
+      |         ^
+./UserCode/UserBsp/bsp_fdcan.c:52:32: error: use of undeclared identifier 'hfdcan1'
+   52 |         HAL_FDCAN_ConfigGlobalFilter(&hfdcan1, FDCAN_REJECT, FDCAN_REJECT, FDCAN_REJECT_REMOTE, FDCAN_REJECT_REMOTE);
+      |                                       ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+
+[2026-03-20 09:52:06]	[info] incremental build: 5 source files changed
+These source files will be recompiled
+---
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserBsp\bsp_fdcan.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\Mahony\MahonyAHRS.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\ebtn\ebtn.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\pid\pid.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\vofa\algorithm.c': object (.o) file not exist
+
+[2026-03-20 09:52:06]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6200E: Symbol Uart_Printf multiply defined (by bsp_usart.o and gimbal.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2026-03-20 09:54:00]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserBsp\bsp_fdcan.c': source file has been changed.
+
+[2026-03-20 09:54:00]	link failed !, exit code: 1
+   at unify_builder.Program.Main(String[] args_)
+---
+Error: L6200E: Symbol Uart_Printf multiply defined (by bsp_usart.o and gimbal.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2026-03-20 09:56:30]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserApp\gimbal.c': source file has been changed.
+
+[2026-03-20 09:56:30]	[done]
+	build successfully !
+
+[2026-03-20 09:56:58]	[done]
+	build successfully !
+
+[2026-03-20 10:09:43]	[info] incremental build: 13 source files changed
+These source files will be recompiled
+---
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\freertos.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\main.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserApp\gimbal.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserApp\irq_handlers.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserBsp\bsp_dwt.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserBsp\bsp_fdcan.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserBsp\bsp_usart.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\BMI088\BMI088Middleware.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\BMI088\BMI088driver.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\Mahony\MahonyAHRS.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\ebtn\ebtn.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\pid\pid.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\vofa\algorithm.c': source file has been changed.
+
+[2026-03-20 10:09:43]	compilation failed at : "d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserApp\gimbal.c", exit code: 1
+command: 
+  "C:\Keil_v5\ARM\ARMCLANG\bin\armclang.exe" --target=arm-arm-none-eabi -c -xc -std=c99 -ICore/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc/Legacy -IMiddlewares/Third_Party/FreeRTOS/Source/include -IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -IMiddlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -IDrivers/CMSIS/Device/ST/STM32F1xx/Include -IDrivers/CMSIS/Include -IUserCode/UserApp -IUserCode/UserBsp -IUserCode/UserDrivers -IUserCode/UserDrivers/BMI088 -IUserCode/UserDrivers/ebtn -IUserCode/UserDrivers/Mahony -IUserCode/UserDrivers/pid -IUserCode/UserDrivers/vofa -I.cmsis/include -IMDK-ARM/RTE/_F103_2025E_Gimbal -D"USE_HAL_DRIVER" -D"STM32F103xB" -mcpu=cortex-m3 -mlittle-endian -O3 -ffunction-sections -funsigned-char -fshort-enums -fshort-wchar -fno-rtti -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -g -o ./build/F103_2025E_Gimbal/.obj/UserCode/UserApp/gimbal.o -MMD ./UserCode/UserApp/gimbal.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+./UserCode/UserApp/gimbal.c:156:13: error: call to undeclared function 'Uart_Printf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  156 |             Uart_Printf(&huart1, "Mahony Init with accel: %.3f,%.3f,%.3f\r\n", accel[0], accel[1], accel[2]);
+      |             ^
+./UserCode/UserApp/gimbal.c:177:17: error: call to undeclared function 'Uart_Printf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  177 |                 Uart_Printf(&huart1, "Gyro calibration done! Offset: %.3f,%.3f,%.3f\r\n", gyro_correct[0], gyro_correct[1], gyro_correct[2]);
+      |                 ^
+2 errors generated.
+
+[2026-03-20 10:33:49]	[info] incremental build: 10 source files changed
+These source files will be recompiled
+---
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\Core\Src\main.c': dependence 'd:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserApp\gimbal.h' has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserApp\gimbal.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserBsp\bsp_fdcan.c': dependence 'd:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserApp\gimbal.h' has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserBsp\bsp_usart.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\BMI088\BMI088Middleware.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\BMI088\BMI088driver.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\Mahony\MahonyAHRS.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\ebtn\ebtn.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\pid\pid.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\vofa\algorithm.c': source file has been changed.
+
+[2026-03-20 10:33:50]	compilation failed at : "d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserApp\gimbal.c", exit code: 1
+command: 
+  "C:\Keil_v5\ARM\ARMCLANG\bin\armclang.exe" --target=arm-arm-none-eabi -c -xc -std=c99 -ICore/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc/Legacy -IMiddlewares/Third_Party/FreeRTOS/Source/include -IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -IMiddlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -IDrivers/CMSIS/Device/ST/STM32F1xx/Include -IDrivers/CMSIS/Include -IUserCode/UserApp -IUserCode/UserBsp -IUserCode/UserDrivers -IUserCode/UserDrivers/BMI088 -IUserCode/UserDrivers/ebtn -IUserCode/UserDrivers/Mahony -IUserCode/UserDrivers/pid -IUserCode/UserDrivers/vofa -I.cmsis/include -IMDK-ARM/RTE/_F103_2025E_Gimbal -D"USE_HAL_DRIVER" -D"STM32F103xB" -mcpu=cortex-m3 -mlittle-endian -O3 -ffunction-sections -funsigned-char -fshort-enums -fshort-wchar -fno-rtti -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -g -o ./build/F103_2025E_Gimbal/.obj/UserCode/UserApp/gimbal.o -MMD ./UserCode/UserApp/gimbal.c
+   at unify_builder.Program.compileByMulThread(Int32 thrNum, CmdInfo[] cmds_, List`1 errLogs)
+   at unify_builder.Program.Main(String[] args_)
+---
+./UserCode/UserApp/gimbal.c:156:13: error: call to undeclared function 'Uart_Printf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  156 |             Uart_Printf(&huart1, "Mahony Init with accel: %.3f,%.3f,%.3f\r\n", accel[0], accel[1], accel[2]);
+      |             ^
+./UserCode/UserApp/gimbal.c:177:17: error: call to undeclared function 'Uart_Printf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  177 |                 Uart_Printf(&huart1, "Gyro calibration done! Offset: %.3f,%.3f,%.3f\r\n", gyro_correct[0], gyro_correct[1], gyro_correct[2]);
+      |                 ^
+2 errors generated.
+
+[2026-03-20 10:40:56]	[info] incremental build: 6 source files changed
+These source files will be recompiled
+---
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserApp\gimbal.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\BMI088\BMI088driver.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\Mahony\MahonyAHRS.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\ebtn\ebtn.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\pid\pid.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\vofa\algorithm.c': source file has been changed.
+
+[2026-03-20 10:40:57]	compilation failed at : "d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserApp\gimbal.c", exit code: 1
+command: 
+  "C:\Keil_v5\ARM\ARMCLANG\bin\armclang.exe" --target=arm-arm-none-eabi -c -xc -std=c99 -ICore/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc/Legacy -IMiddlewares/Third_Party/FreeRTOS/Source/include -IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -IMiddlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -IDrivers/CMSIS/Device/ST/STM32F1xx/Include -IDrivers/CMSIS/Include -IUserCode/UserApp -IUserCode/UserBsp -IUserCode/UserDrivers -IUserCode/UserDrivers/BMI088 -IUserCode/UserDrivers/ebtn -IUserCode/UserDrivers/Mahony -IUserCode/UserDrivers/pid -IUserCode/UserDrivers/vofa -I.cmsis/include -IMDK-ARM/RTE/_F103_2025E_Gimbal -D"USE_HAL_DRIVER" -D"STM32F103xB" -mcpu=cortex-m3 -mlittle-endian -O3 -ffunction-sections -funsigned-char -fshort-enums -fshort-wchar -fno-rtti -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -g -o ./build/F103_2025E_Gimbal/.obj/UserCode/UserApp/gimbal.o -MMD ./UserCode/UserApp/gimbal.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./UserCode/UserApp/gimbal.c:156:13: error: call to undeclared function 'Uart_Printf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  156 |             Uart_Printf(&huart1, "Mahony Init with accel: %.3f,%.3f,%.3f\r\n", accel[0], accel[1], accel[2]);
+      |             ^
+./UserCode/UserApp/gimbal.c:177:17: error: call to undeclared function 'Uart_Printf'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  177 |                 Uart_Printf(&huart1, "Gyro calibration done! Offset: %.3f,%.3f,%.3f\r\n", gyro_correct[0], gyro_correct[1], gyro_correct[2]);
+      |                 ^
+2 errors generated.
+
+[2026-03-20 10:42:01]	[info] incremental build: 6 source files changed
+These source files will be recompiled
+---
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserApp\gimbal.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\BMI088\BMI088driver.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\Mahony\MahonyAHRS.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\ebtn\ebtn.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\pid\pid.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\vofa\algorithm.c': source file has been changed.
+
+[2026-03-20 10:42:01]	compilation failed at : "d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserApp\gimbal.c", exit code: 1
+command: 
+  "C:\Keil_v5\ARM\ARMCLANG\bin\armclang.exe" --target=arm-arm-none-eabi -c -xc -std=c99 -ICore/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc -IDrivers/STM32F1xx_HAL_Driver/Inc/Legacy -IMiddlewares/Third_Party/FreeRTOS/Source/include -IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -IMiddlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -IDrivers/CMSIS/Device/ST/STM32F1xx/Include -IDrivers/CMSIS/Include -IUserCode/UserApp -IUserCode/UserBsp -IUserCode/UserDrivers -IUserCode/UserDrivers/BMI088 -IUserCode/UserDrivers/ebtn -IUserCode/UserDrivers/Mahony -IUserCode/UserDrivers/pid -IUserCode/UserDrivers/vofa -I.cmsis/include -IMDK-ARM/RTE/_F103_2025E_Gimbal -D"USE_HAL_DRIVER" -D"STM32F103xB" -mcpu=cortex-m3 -mlittle-endian -O3 -ffunction-sections -funsigned-char -fshort-enums -fshort-wchar -fno-rtti -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -g -o ./build/F103_2025E_Gimbal/.obj/UserCode/UserApp/gimbal.o -MMD ./UserCode/UserApp/gimbal.c
+   at unify_builder.Program.Main(String[] args_)
+---
+./UserCode/UserApp/gimbal.c:15:10: fatal error: 'bsp_uart.h' file not found
+   15 | #include "bsp_uart.h"
+      |          ^~~~~~~~~~~~
+1 error generated.
+
+[2026-03-20 10:43:01]	[info] incremental build: 6 source files changed
+These source files will be recompiled
+---
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserApp\gimbal.c': object (.o) file not exist
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\BMI088\BMI088driver.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\Mahony\MahonyAHRS.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\ebtn\ebtn.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\pid\pid.c': source file has been changed.
+'d:\my-documents\research\stm32\2025E\03-pj\mdk-pj\F103_2025E_Gimbal\UserCode\UserDrivers\vofa\algorithm.c': source file has been changed.
+
+[2026-03-20 10:43:02]	[done]
+	build successfully !
+

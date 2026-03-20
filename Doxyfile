@@ -1,0 +1,6 @@
+PROJECT_NAME           = "MyProject"
+INPUT                  = src include
+RECURSIVE              = YES
+GENERATE_HTML          = NO
+GENERATE_XML           = YES
+XML_OUTPUT             = docs/build/doxygen/xml

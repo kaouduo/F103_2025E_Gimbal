@@ -1,0 +1,26 @@
+# Keil MDK / STM32 ignored files
+*.o
+*.d
+*.crf
+*.htm
+*.dep
+*.map
+*.lst
+*.bak
+*.uvoptx
+*.uvgui.*
+*.scvd
+Objects/
+Listings/
+DebugConfig/
+EventRecorder/
+
+# Doxygen / Sphinx generated files
+docs/build/
+docs/source/_build/
+html/
+latex/
+
+# OS generated files
+.DS_Store
+Thumbs.db
