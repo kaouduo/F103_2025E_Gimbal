@@ -1,19 +1,12 @@
-Welcome to MyProject's Documentation!
-=====================================
+F103_2025E_Gimbal Programming Guide
+===================================
 
-欢迎使用 MyProject 项目！本项目的文档是由 Doxygen 提取 C/C++ 注释，通过 Breathe 桥接，最后由 Sphinx 生成的精美在线网页。
-
-API 章节
---------
-
-以下是项目中核心模块的 API 列表及说明：
-
-.. doxygenfile:: gimbal.h
-   :project: MyProject
-
-.. doxygenfile:: pid.h
-   :project: MyProject
+This is the documentation for the F103_2025E_Gimbal project. This document describes using the STM32F103 SoC for gimbal control.
 
 .. toctree::
    :maxdepth: 2
-   :caption: 目录:
+   :caption: Contents:
+
+   Get Started <get-started/index>
+   API Reference <api-reference/index>
+   Hardware Reference <hw-reference/index>

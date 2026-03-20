@@ -1,0 +1,387 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PID Control API &mdash; MyProject  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Hardware Reference" href="../hw-reference/index.html" />
+    <link rel="prev" title="Gimbal API" href="gimbal_api.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #2980B9" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            MyProject
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../get-started/index.html">Get Started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="gimbal_api.html">Gimbal API</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">PID Control API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv410PID_Type_t"><code class="docutils literal notranslate"><span class="pre">PID_Type_t</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N10PID_Type_t13POSITION_TYPEE"><code class="docutils literal notranslate"><span class="pre">POSITION_TYPE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N10PID_Type_t10DELTA_TYPEE"><code class="docutils literal notranslate"><span class="pre">DELTA_TYPE</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv48PID_InitP5PID_tK10PID_Type_tKfKfKfKfKfKfKf"><code class="docutils literal notranslate"><span class="pre">PID_Init()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv414PID_InitSimpleP5PID_tK10PID_Type_tKfKfKf"><code class="docutils literal notranslate"><span class="pre">PID_InitSimple()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv413PID_SetTargetP5PID_tKf"><code class="docutils literal notranslate"><span class="pre">PID_SetTarget()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv415PID_SetSumErrorP5PID_tKf"><code class="docutils literal notranslate"><span class="pre">PID_SetSumError()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv48PID_CalcP5PID_tKf"><code class="docutils literal notranslate"><span class="pre">PID_Calc()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv49PID_ResetP5PID_t"><code class="docutils literal notranslate"><span class="pre">PID_Reset()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv413PID_GetOutputPK5PID_t"><code class="docutils literal notranslate"><span class="pre">PID_GetOutput()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv419PID_GetCurrentErrorPK5PID_tKf"><code class="docutils literal notranslate"><span class="pre">PID_GetCurrentError()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#_CPPv45PID_t"><code class="docutils literal notranslate"><span class="pre">PID_t</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N5PID_t8pid_typeE"><code class="docutils literal notranslate"><span class="pre">pid_type</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N5PID_t2kpE"><code class="docutils literal notranslate"><span class="pre">kp</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N5PID_t2kiE"><code class="docutils literal notranslate"><span class="pre">ki</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N5PID_t2kdE"><code class="docutils literal notranslate"><span class="pre">kd</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N5PID_t17sum_error_limit_pE"><code class="docutils literal notranslate"><span class="pre">sum_error_limit_p</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N5PID_t17sum_error_limit_nE"><code class="docutils literal notranslate"><span class="pre">sum_error_limit_n</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N5PID_t14output_limit_pE"><code class="docutils literal notranslate"><span class="pre">output_limit_p</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N5PID_t14output_limit_nE"><code class="docutils literal notranslate"><span class="pre">output_limit_n</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N5PID_t6targetE"><code class="docutils literal notranslate"><span class="pre">target</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N5PID_t5errorE"><code class="docutils literal notranslate"><span class="pre">error</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N5PID_t9pre_errorE"><code class="docutils literal notranslate"><span class="pre">pre_error</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N5PID_t9sum_errorE"><code class="docutils literal notranslate"><span class="pre">sum_error</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#_CPPv4N5PID_t6outputE"><code class="docutils literal notranslate"><span class="pre">output</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../hw-reference/index.html">Hardware Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #2980B9" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">MyProject</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">API Reference</a></li>
+      <li class="breadcrumb-item active">PID Control API</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api-reference/pid_api.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pid-control-api">
+<h1>PID Control API<a class="headerlink" href="#pid-control-api" title="Link to this heading"></a></h1>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-enums">Enums</p>
+<dl class="cpp enum">
+<dt class="sig sig-object cpp" id="_CPPv410PID_Type_t">
+<span id="_CPPv310PID_Type_t"></span><span id="_CPPv210PID_Type_t"></span><span class="target" id="pid_8h_1a571490b9e00127717230bdae9a4db7be"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PID_Type_t</span></span></span><a class="headerlink" href="#_CPPv410PID_Type_t" title="Link to this definition"></a><br /></dt>
+<dd><p>PID基础控制库(C) </p>
+<p><dl class="simple">
+<dt><strong>Author</strong></dt><dd><p></p>
+</dd>
+<dt><strong>Date</strong></dt><dd><p>2026-1-17 </p>
+</dd>
+</dl>
+</p>
+<p><em>Values:</em></p>
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N10PID_Type_t13POSITION_TYPEE">
+<span id="_CPPv3N10PID_Type_t13POSITION_TYPEE"></span><span id="_CPPv2N10PID_Type_t13POSITION_TYPEE"></span><span class="target" id="pid_8h_1a571490b9e00127717230bdae9a4db7bea5c816e82e775885fccc246d95e060f99"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">POSITION_TYPE</span></span></span><a class="headerlink" href="#_CPPv4N10PID_Type_t13POSITION_TYPEE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp enumerator">
+<dt class="sig sig-object cpp" id="_CPPv4N10PID_Type_t10DELTA_TYPEE">
+<span id="_CPPv3N10PID_Type_t10DELTA_TYPEE"></span><span id="_CPPv2N10PID_Type_t10DELTA_TYPEE"></span><span class="target" id="pid_8h_1a571490b9e00127717230bdae9a4db7bea05936bdadda221105400cefcf1f67fdf"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DELTA_TYPE</span></span></span><a class="headerlink" href="#_CPPv4N10PID_Type_t10DELTA_TYPEE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv48PID_InitP5PID_tK10PID_Type_tKfKfKfKfKfKfKf">
+<span id="_CPPv38PID_InitP5PID_tK10PID_Type_tKfKfKfKfKfKfKf"></span><span id="_CPPv28PID_InitP5PID_tK10PID_Type_tKfKfKfKfKfKfKf"></span><span id="PID_Init__PID_tP.PID_Type_tC.floatC.floatC.floatC.floatC.floatC.floatC.floatC"></span><span class="target" id="pid_8h_1afebb791d635a95d7e4467e3b08d81b76"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PID_Init</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv45PID_t" title="PID_t"><span class="n"><span class="pre">PID_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">pid</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv410PID_Type_t" title="PID_Type_t"><span class="n"><span class="pre">PID_Type_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">pid_type</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">kp</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ki</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">kd</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">sum_error_limit_p</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">sum_error_limit_n</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">output_limit_p</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">output_limit_n</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv48PID_InitP5PID_tK10PID_Type_tKfKfKfKfKfKfKf" title="Link to this definition"></a><br /></dt>
+<dd><p>PID结构体初始化函数 </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pid</strong> – PID结构体指针 </p></li>
+<li><p><strong>pid_type</strong> – PID类型 </p></li>
+<li><p><strong>kp, ki, kd</strong> – PID三个参数 </p></li>
+<li><p><strong>sum_error_limit_p</strong> – 积分限幅上限 </p></li>
+<li><p><strong>sum_error_limit_n</strong> – 积分限幅下限 </p></li>
+<li><p><strong>output_limit_p</strong> – 输出限幅上限 </p></li>
+<li><p><strong>output_limit_n</strong> – 输出限幅下限 </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv414PID_InitSimpleP5PID_tK10PID_Type_tKfKfKf">
+<span id="_CPPv314PID_InitSimpleP5PID_tK10PID_Type_tKfKfKf"></span><span id="_CPPv214PID_InitSimpleP5PID_tK10PID_Type_tKfKfKf"></span><span id="PID_InitSimple__PID_tP.PID_Type_tC.floatC.floatC.floatC"></span><span class="target" id="pid_8h_1a7b0aa17c5faf0b3d6f30a6b87c6d9579"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PID_InitSimple</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv45PID_t" title="PID_t"><span class="n"><span class="pre">PID_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">pid</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv410PID_Type_t" title="PID_Type_t"><span class="n"><span class="pre">PID_Type_t</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">pid_type</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">kp</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ki</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">kd</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv414PID_InitSimpleP5PID_tK10PID_Type_tKfKfKf" title="Link to this definition"></a><br /></dt>
+<dd><p>PID结构体初始化函数(简化版，不设置限幅) </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pid</strong> – PID结构体指针 </p></li>
+<li><p><strong>pid_type</strong> – PID类型 </p></li>
+<li><p><strong>kp, ki, kd</strong> – PID三个参数 </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv413PID_SetTargetP5PID_tKf">
+<span id="_CPPv313PID_SetTargetP5PID_tKf"></span><span id="_CPPv213PID_SetTargetP5PID_tKf"></span><span id="PID_SetTarget__PID_tP.floatC"></span><span class="target" id="pid_8h_1ac411e30e526e23b535fca00fae562b38"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PID_SetTarget</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv45PID_t" title="PID_t"><span class="n"><span class="pre">PID_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">pid</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">target</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413PID_SetTargetP5PID_tKf" title="Link to this definition"></a><br /></dt>
+<dd><p>设置PID目标值 </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pid</strong> – PID结构体指针 </p></li>
+<li><p><strong>target</strong> – 新的PID目标值 </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv415PID_SetSumErrorP5PID_tKf">
+<span id="_CPPv315PID_SetSumErrorP5PID_tKf"></span><span id="_CPPv215PID_SetSumErrorP5PID_tKf"></span><span id="PID_SetSumError__PID_tP.floatC"></span><span class="target" id="pid_8h_1ae0424db2dcdbd717393dc53777108204"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PID_SetSumError</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv45PID_t" title="PID_t"><span class="n"><span class="pre">PID_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">pid</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">sum_error</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv415PID_SetSumErrorP5PID_tKf" title="Link to this definition"></a><br /></dt>
+<dd><p>设置积分值,用于高自由度的积分限幅 </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pid</strong> – PID结构体指针 </p></li>
+<li><p><strong>sum_error</strong> – PID积分值 </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv48PID_CalcP5PID_tKf">
+<span id="_CPPv38PID_CalcP5PID_tKf"></span><span id="_CPPv28PID_CalcP5PID_tKf"></span><span id="PID_Calc__PID_tP.floatC"></span><span class="target" id="pid_8h_1a4a7dfa5f05b149f434728858be08c964"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PID_Calc</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv45PID_t" title="PID_t"><span class="n"><span class="pre">PID_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">pid</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">input</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv48PID_CalcP5PID_tKf" title="Link to this definition"></a><br /></dt>
+<dd><p>PID计算 </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pid</strong> – PID结构体指针 </p></li>
+<li><p><strong>input</strong> – PID观测值 </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>PID计算结果 </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv49PID_ResetP5PID_t">
+<span id="_CPPv39PID_ResetP5PID_t"></span><span id="_CPPv29PID_ResetP5PID_t"></span><span id="PID_Reset__PID_tP"></span><span class="target" id="pid_8h_1a027c822df7fa0fd4e518f77ac15b4d86"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PID_Reset</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv45PID_t" title="PID_t"><span class="n"><span class="pre">PID_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">pid</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv49PID_ResetP5PID_t" title="Link to this definition"></a><br /></dt>
+<dd><p>重置PID内部状态 </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pid</strong> – PID结构体指针 </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv413PID_GetOutputPK5PID_t">
+<span id="_CPPv313PID_GetOutputPK5PID_t"></span><span id="_CPPv213PID_GetOutputPK5PID_t"></span><span id="PID_GetOutput__PID_tCP"></span><span class="target" id="pid_8h_1a2073e1b80b7b41e770c74938425cada1"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PID_GetOutput</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv45PID_t" title="PID_t"><span class="n"><span class="pre">PID_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">pid</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv413PID_GetOutputPK5PID_t" title="Link to this definition"></a><br /></dt>
+<dd><p>获取当前PID输出值 </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pid</strong> – PID结构体指针 </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>当前PID输出值 </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv419PID_GetCurrentErrorPK5PID_tKf">
+<span id="_CPPv319PID_GetCurrentErrorPK5PID_tKf"></span><span id="_CPPv219PID_GetCurrentErrorPK5PID_tKf"></span><span id="PID_GetCurrentError__PID_tCP.floatC"></span><span class="target" id="pid_8h_1a7a442cf12c3dc3d8e608e67accacb9a3"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PID_GetCurrentError</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv45PID_t" title="PID_t"><span class="n"><span class="pre">PID_t</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">pid</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">current_value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419PID_GetCurrentErrorPK5PID_tKf" title="Link to this definition"></a><br /></dt>
+<dd><p>获取当前误差值 </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pid</strong> – PID结构体指针 </p></li>
+<li><p><strong>current_value</strong> – 当前测量值 </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>当前误差值 </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv45PID_t">
+<span id="_CPPv35PID_t"></span><span id="_CPPv25PID_t"></span><span id="PID_t"></span><span class="target" id="structPID__t"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PID_t</span></span></span><a class="headerlink" href="#_CPPv45PID_t" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;pid.h&gt;</em></div>
+<p>PID结构体定义 </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5PID_t8pid_typeE">
+<span id="_CPPv3N5PID_t8pid_typeE"></span><span id="_CPPv2N5PID_t8pid_typeE"></span><span id="PID_t::pid_type__PID_Type_t"></span><span class="target" id="structPID__t_1afa07cdba16505924b3fba3d6dc324e37"></span><a class="reference internal" href="#_CPPv410PID_Type_t" title="PID_Type_t"><span class="n"><span class="pre">PID_Type_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pid_type</span></span></span><a class="headerlink" href="#_CPPv4N5PID_t8pid_typeE" title="Link to this definition"></a><br /></dt>
+<dd><p>PID类型 </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5PID_t2kpE">
+<span id="_CPPv3N5PID_t2kpE"></span><span id="_CPPv2N5PID_t2kpE"></span><span id="PID_t::kp__float"></span><span class="target" id="structPID__t_1a86ed90350a54f91337aabab3a3509977"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">kp</span></span></span><a class="headerlink" href="#_CPPv4N5PID_t2kpE" title="Link to this definition"></a><br /></dt>
+<dd><p>比例系数 </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5PID_t2kiE">
+<span id="_CPPv3N5PID_t2kiE"></span><span id="_CPPv2N5PID_t2kiE"></span><span id="PID_t::ki__float"></span><span class="target" id="structPID__t_1a8a7c61382c98746cac3b1bccc784636d"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ki</span></span></span><a class="headerlink" href="#_CPPv4N5PID_t2kiE" title="Link to this definition"></a><br /></dt>
+<dd><p>积分系数 </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5PID_t2kdE">
+<span id="_CPPv3N5PID_t2kdE"></span><span id="_CPPv2N5PID_t2kdE"></span><span id="PID_t::kd__float"></span><span class="target" id="structPID__t_1ad6ab166bcd4b735eac6a97cd30ed647b"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">kd</span></span></span><a class="headerlink" href="#_CPPv4N5PID_t2kdE" title="Link to this definition"></a><br /></dt>
+<dd><p>微分系数 </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5PID_t17sum_error_limit_pE">
+<span id="_CPPv3N5PID_t17sum_error_limit_pE"></span><span id="_CPPv2N5PID_t17sum_error_limit_pE"></span><span id="PID_t::sum_error_limit_p__float"></span><span class="target" id="structPID__t_1ac9f5c3b6d90955b40fd6f3f62c2c1872"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sum_error_limit_p</span></span></span><a class="headerlink" href="#_CPPv4N5PID_t17sum_error_limit_pE" title="Link to this definition"></a><br /></dt>
+<dd><p>积分限幅上限 </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5PID_t17sum_error_limit_nE">
+<span id="_CPPv3N5PID_t17sum_error_limit_nE"></span><span id="_CPPv2N5PID_t17sum_error_limit_nE"></span><span id="PID_t::sum_error_limit_n__float"></span><span class="target" id="structPID__t_1a67d394e8fd557879247c0095aa2367f1"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sum_error_limit_n</span></span></span><a class="headerlink" href="#_CPPv4N5PID_t17sum_error_limit_nE" title="Link to this definition"></a><br /></dt>
+<dd><p>积分限幅下限 </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5PID_t14output_limit_pE">
+<span id="_CPPv3N5PID_t14output_limit_pE"></span><span id="_CPPv2N5PID_t14output_limit_pE"></span><span id="PID_t::output_limit_p__float"></span><span class="target" id="structPID__t_1a8fc63a536fc41895295ceb9512b4fdf7"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">output_limit_p</span></span></span><a class="headerlink" href="#_CPPv4N5PID_t14output_limit_pE" title="Link to this definition"></a><br /></dt>
+<dd><p>输出限幅上限 </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5PID_t14output_limit_nE">
+<span id="_CPPv3N5PID_t14output_limit_nE"></span><span id="_CPPv2N5PID_t14output_limit_nE"></span><span id="PID_t::output_limit_n__float"></span><span class="target" id="structPID__t_1abc8ff4e8d55376cf41130033ecd1bf44"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">output_limit_n</span></span></span><a class="headerlink" href="#_CPPv4N5PID_t14output_limit_nE" title="Link to this definition"></a><br /></dt>
+<dd><p>输出限幅下限 </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5PID_t6targetE">
+<span id="_CPPv3N5PID_t6targetE"></span><span id="_CPPv2N5PID_t6targetE"></span><span id="PID_t::target__float"></span><span class="target" id="structPID__t_1a0e8ee5f81e785efdd5015c47d80b21b7"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">target</span></span></span><a class="headerlink" href="#_CPPv4N5PID_t6targetE" title="Link to this definition"></a><br /></dt>
+<dd><p>目标值 </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5PID_t5errorE">
+<span id="_CPPv3N5PID_t5errorE"></span><span id="_CPPv2N5PID_t5errorE"></span><span id="PID_t::error__float"></span><span class="target" id="structPID__t_1a9a8e8eea3c79fc741766163cb5d12aec"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">error</span></span></span><a class="headerlink" href="#_CPPv4N5PID_t5errorE" title="Link to this definition"></a><br /></dt>
+<dd><p>上一次的偏差值 </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5PID_t9pre_errorE">
+<span id="_CPPv3N5PID_t9pre_errorE"></span><span id="_CPPv2N5PID_t9pre_errorE"></span><span id="PID_t::pre_error__float"></span><span class="target" id="structPID__t_1a9ea2110577a8607a6574e005d59cf615"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pre_error</span></span></span><a class="headerlink" href="#_CPPv4N5PID_t9pre_errorE" title="Link to this definition"></a><br /></dt>
+<dd><p>上上一次的偏差值,仅增量式PID使用 </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5PID_t9sum_errorE">
+<span id="_CPPv3N5PID_t9sum_errorE"></span><span id="_CPPv2N5PID_t9sum_errorE"></span><span id="PID_t::sum_error__float"></span><span class="target" id="structPID__t_1a03de679571b859d6367e411b1331587e"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sum_error</span></span></span><a class="headerlink" href="#_CPPv4N5PID_t9sum_errorE" title="Link to this definition"></a><br /></dt>
+<dd><p>累计偏差值,仅位置式PID使用 </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5PID_t6outputE">
+<span id="_CPPv3N5PID_t6outputE"></span><span id="_CPPv2N5PID_t6outputE"></span><span id="PID_t::output__float"></span><span class="target" id="structPID__t_1a4b7fafbf6804fedb8efadf61fbcddcb8"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">output</span></span></span><a class="headerlink" href="#_CPPv4N5PID_t6outputE" title="Link to this definition"></a><br /></dt>
+<dd><p>PID输出值 </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="gimbal_api.html" class="btn btn-neutral float-left" title="Gimbal API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../hw-reference/index.html" class="btn btn-neutral float-right" title="Hardware Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, AutoGenerated.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
