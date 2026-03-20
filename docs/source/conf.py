@@ -12,6 +12,12 @@ language = 'zh_CN'
 extensions = [
     'breathe',
     'sphinx_rtd_theme',
+    'myst_parser',
+]
+
+# -- MyST configuration ------------------------------------------------------
+myst_enable_extensions = [
+    "colon_fence",
 ]
 
 # -- Options for HTML output -------------------------------------------------
