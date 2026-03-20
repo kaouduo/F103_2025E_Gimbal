@@ -1,4 +1,4 @@
-Gimbal API
+云台控制 API
 ==========
 
 .. doxygenfile:: gimbal.h

@@ -1,19 +1,19 @@
-Hardware Reference
+硬件参考
 ==================
 
-This section provides details about the hardware used in this project.
+本章节提供了项目中使用的硬件详细信息。
 
-Microcontroller
+微控制器 (MCU)
 ---------------
 
 * **STM32F103C8T6**
-  * ARM Cortex-M3 core
-  * 72 MHz max CPU frequency
+  * ARM Cortex-M3 内核
+  * 最高 72 MHz CPU 频率
   * 64 KB Flash, 20 KB SRAM
 
-Sensors
+传感器
 -------
 
 * **BMI088 IMU**
-  * 6-axis inertial measurement unit (3-axis accelerometer, 3-axis gyroscope)
-  * Used for attitude estimation of the gimbal.
+  * 6轴惯性测量单元 (3轴加速度计, 3轴陀螺仪)
+  * 用于云台的姿态估计。

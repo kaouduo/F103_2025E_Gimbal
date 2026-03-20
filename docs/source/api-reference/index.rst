@@ -1,7 +1,7 @@
-API Reference
+API 参考
 =============
 
-This section contains the API reference for the F103_2025E_Gimbal project, extracted directly from the source code comments.
+本章节包含了 F103_2025E_Gimbal 项目的 API 参考文档，这些内容是由 Doxygen 直接从源代码的注释中自动提取生成的。
 
 .. toctree::
    :maxdepth: 1
