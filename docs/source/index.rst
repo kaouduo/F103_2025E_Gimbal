@@ -8,12 +8,11 @@ API 章节
 
 以下是项目中核心模块的 API 列表及说明：
 
-.. doxygenfile:: example.h
+.. doxygenfile:: gimbal.h
    :project: MyProject
 
-.. doxygenclass:: MyClass
+.. doxygenfile:: pid.h
    :project: MyProject
-   :members:
 
 .. toctree::
    :maxdepth: 2

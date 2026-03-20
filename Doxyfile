@@ -1,5 +1,5 @@
 PROJECT_NAME           = "MyProject"
-INPUT                  = src include
+INPUT                  = Core/Src Core/Inc UserCode
 RECURSIVE              = YES
 GENERATE_HTML          = NO
 GENERATE_XML           = YES
